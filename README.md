@@ -1,5 +1,5 @@
 # Car-Detection-with-YOLO
-YOLO
+
 YOLO ("you only look once") is a popular algoritm because it achieves high accuracy while also being able to run in real-time, almost clocking 45 frames per second. A smaller version of the network, Fast YOLO, processes an astounding 155 frames per second while still achieving double the mAP of other real-time detectors. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
 
 
@@ -38,12 +38,14 @@ For a more detailed discussion, follow issue
 
 
 NOTE
+
 Training a YOLO model takes a very long time and requires a fairly large dataset of labelled bounding boxes for a large range of target classes. This project uses existing pretrained weights from the official YOLO website, and further processed using a function written by Allan Zelener.
 Complete model architecture can be found here
 Instructions to generate yolo.h5 file can be found here. Place that in model_data folder
 Input images can be found in images directory. Corresponding output images can be found in out directory.
 
 References
+
 Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi - You Only Look Once: Unified, Real-Time Object Detection (2015)
 Joseph Redmon, Ali Farhadi - YOLO9000: Better, Faster, Stronger (2016)
 Allan Zelener - YAD2K: Yet Another Darknet 2 Keras
